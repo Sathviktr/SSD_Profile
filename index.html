@@ -4,75 +4,452 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .profile-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #667eea;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-info p {
+            margin: 8px 0;
+        }
+
+        .profile-info p:first-child {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin: 25px 0 15px 0;
+            font-size: 1.5em;
+            border-left: 4px solid #764ba2;
+            padding-left: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            vertical-align: top;
+            background: white;
+        }
+
+        td:hover {
+            background: #f8f9fa;
+            transition: background 0.3s ease;
+        }
+
+        h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        td p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 8px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            transition: transform 0.2s ease;
+        }
+
+        li:hover {
+            transform: translateX(5px);
+            background: #e9ecef;
+        }
+    </style>
 </head>
 <body>
-    <center><h1>My Profile</h1></center>
-    <div>
-    <img src="reduced pic.jpg" alt="Profile Picture" width="150" align="right">
-    <p>Name: SATHVIK REDDY</p>
-    <p>Age: 21</p>
-    <p>College : IIIT HYDERABAD(MTECH CSE)</p>
-    <p>
-Hi there! I'm SATHVIK. I love learning new things, taking on challenges, and creating projects that reflect my ideas. 
-Outside of work, I enjoy reading books and playing games, which keep me inspired and balanced. 
-I’m always excited to connect with new people and explore fresh opportunities.
-</p>
-</div>
-<div></div>
-<h3>EDUCATION DETAILS:</h3>
+    <div class="container">
+        <h1>My Profile</h1>
+        
+        <div class="profile-section">
+            <img src="reduced pic.jpg" alt="Profile Picture">
+            <div class="profile-info">
+                <p>Name: SATHVIK REDDY</p>
+                <p>Age: 21</p>
+                <p>College: IIIT HYDERABAD (MTECH CSE)</p>
+                <p>
+                    Hi there! I'm SATHVIK. I love learning new things, taking on challenges, and creating projects that reflect my ideas. 
+                    Outside of work, I enjoy reading books and playing games, which keep me inspired and balanced. 
+                    I'm always excited to connect with new people and explore fresh opportunities.
+                </p>
+            </div>
+        </div>
 
-<table border="1" cellpadding="10" cellspacing="0">
-  <tr>
-    <td>
-      <h4>10th Class</h4>
-      <p>School: Jawahar Navodaya Vidyalaya</p>
-      <p>Board: CBSE</p>
-      <p>Year of Passing: 2019</p>
-      <p>Percentage: 93.8</p>
-    </td>
-    <td>
-      <h4>12th Class</h4>
-      <p>School: Bhashyam IIT</p>
-      <p>Board: BIEAP</p>
-      <p>Year of Passing: 2021</p>
-      <p>Percentage: 96.8</p>
-    </td>
-    <td>
-      <h4>Graduation</h4>
-      <p>College: Andhra University</p>
-      <p>Degree: B.Tech IT</p>
-      <p>Year of Passing: 2025</p>
-      <p>CGPA: 8.43</p>
-    </td>
-    <td>
-        <h4>Post Graduation</h4>
-        <p>College: IIIT Hyderabad</p>
-        <p>Degree: M.Tech CSE</p>
-        <p>Year of Passing: 2027</p>
-    </td>
-  </tr>
-</table>
-    <h3>SKILLS:</h3>
-    <ul>
-        <li>Programming Languages: C++, C, Java</li>
-        <li>Web Development: HTML, CSS, JavaScript</li>
-        <li>Machine Learning: Scikit-learn, TensorFlow</li>
-    </ul>
-    <h3>PROJECTS:</h3>
-<ol>
-  <li>Federated Learning for Stock Prediction: Implemented a federated learning framework using LSTM models to predict stock prices (Tesla and other companies). Clients trained locally and collaborated through a central server for model aggregation.</li>
-  
-  <li>Seam Carving for Image Resizing: Developed an image processing application in C++ using OpenCV to intelligently resize images by preserving important content and removing low-energy seams.</li>
-  
-  <li>Trie-Based Auto-Complete System: Built an efficient auto-complete feature in C++ using Trie data structure, supporting fast prefix-based word suggestions.</li>
-</ol>
-<h3>HOBBIES:</h3>
-<ul>
-    <li>Reading Books</li>
-    <li>Playing Games</li>
-    <li>Coding</li>
- </ul>
- </table>   
+        <h3>EDUCATION DETAILS:</h3>
+        <table>
+            <tr>
+                <td>
+                    <h4>10th Class</h4>
+                    <p>School: Jawahar Navodaya Vidyalaya</p>
+                    <p>Board: CBSE</p>
+                    <p>Year of Passing: 2019</p>
+                    <p>Percentage: 93.8</p>
+                </td>
+                <td>
+                    <h4>12th Class</h4>
+                    <p>School: Bhashyam IIT</p>
+                    <p>Board: BIEAP</p>
+                    <p>Year of Passing: 2021</p>
+                    <p>Percentage: 96.8</p>
+                </td>
+                <td>
+                    <h4>Graduation</h4>
+                    <p>College: Andhra University</p>
+                    <p>Degree: B.Tech IT</p>
+                    <p>Year of Passing: 2025</p>
+                    <p>CGPA: 8.43</p>
+                </td>
+                <td>
+                    <h4>Post Graduation</h4>
+                    <p>College: IIIT Hyderabad</p>
+                    <p>Degree: M.Tech CSE</p>
+                    <p>Year of Passing: 2027</p>
+                </td>
+            </tr>
+        </table>
 
+        <h3>SKILLS:</h3>
+        <ul>
+            <li>Programming Languages: C++, C, Java</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>Machine Learning: Scikit-learn, TensorFlow</li>
+        </ul>
+
+        <h3>PROJECTS:</h3>
+        <ol>
+            <li>Federated Learning for Stock Prediction: Implemented a federated learning framework using LSTM models to predict stock prices (Tesla and other companies). Clients trained locally and collaborated through a central server for model aggregation.</li>
+            <li>Seam Carving for Image Resizing: Developed an image processing application in C++ using OpenCV to intelligently resize images by preserving important content and removing low-energy seams.</li>
+            <li>Trie-Based Auto-Complete System: Built an efficient auto-complete feature in C++ using Trie data structure, supporting fast prefix-based word suggestions.</li>
+        </ol>
+
+        <h3>HOBBIES:</h3>
+        <ul>
+            <li>Reading Books</li>
+            <li>Playing Games</li>
+            <li>Coding</li>
+        </ul>
+    </div>
 </body>
+<script>
+
+(function() {
+    'use strict';
+    
+    /**
+     * Get timestamp in readable format
+     * @returns {string} Formatted timestamp
+     */
+    function getTimestamp() {
+        const now = new Date();
+        return now.toISOString().replace('T', ' ').split('.')[0];
+    }
+    
+    /**
+     * Get element identifier with multiple fallbacks
+     * @param {HTMLElement} element - The DOM element
+     * @returns {string} Element description
+     */
+    function getElementDescription(element) {
+        // Get tag name
+        const tagName = element.tagName.toLowerCase();
+        
+        // Get element type based on tag and attributes
+        let elementType = tagName;
+        
+        // Determine specific element types
+        if (tagName === 'input') {
+            elementType = element.type ? `input_${element.type}` : 'input';
+        } else if (tagName === 'button') {
+            elementType = 'button';
+        } else if (tagName === 'a') {
+            elementType = 'link';
+        } else if (tagName === 'img') {
+            elementType = 'image';
+        } else if (tagName === 'select') {
+            elementType = 'drop_down';
+        } else if (tagName === 'textarea') {
+            elementType = 'textarea';
+        } else if (tagName === 'video') {
+            elementType = 'video';
+        } else if (tagName === 'audio') {
+            elementType = 'audio';
+        } else if (tagName === 'canvas') {
+            elementType = 'canvas';
+        } else if (['p', 'span', 'div', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'label'].includes(tagName)) {
+            elementType = 'text';
+        }
+        
+        // Get additional identifiers
+        const id = element.id ? `#${element.id}` : '';
+        const className = element.className ? `.${element.className.split(' ').join('.')}` : '';
+        const text = element.textContent ? element.textContent.trim().substring(0, 30) : '';
+        
+        // Build description string
+        let description = `${tagName}${id}${className}`;
+        
+        // Add text content if available and not too long
+        if (text && text.length > 0 && text.length < 30) {
+            description += ` [${text}]`;
+        }
+        
+        return {
+            type: elementType,
+            description: description,
+            tagName: tagName
+        };
+    }
+    
+    /**
+     * Get CSS properties of an element
+     * @param {HTMLElement} element - The DOM element
+     * @returns {string} Relevant CSS properties
+     */
+    function getCSSInfo(element) {
+        const computed = window.getComputedStyle(element);
+        const relevantProps = {
+            position: computed.position,
+            display: computed.display,
+            backgroundColor: computed.backgroundColor,
+            color: computed.color
+        };
+        return JSON.stringify(relevantProps);
+    }
+    
+    /**
+     * Log event to console
+     * @param {string} timestamp - Time of event
+     * @param {string} eventType - Type of event (click/view)
+     * @param {string} objectType - Type of object interacted with
+     * @param {string} details - Additional details
+     */
+    function logEvent(timestamp, eventType, objectType, details) {
+        console.log(`${timestamp}, ${eventType}, ${objectType}, ${details}`);
+    }
+    
+    /**
+     * Track click events on all elements
+     */
+    function trackClickEvents() {
+        document.addEventListener('click', function(event) {
+            const timestamp = getTimestamp();
+            const element = event.target;
+            const elementInfo = getElementDescription(element);
+            const cssInfo = getCSSInfo(element);
+            
+            // Log the click event
+            logEvent(
+                timestamp,
+                'click',
+                elementInfo.type,
+                `${elementInfo.description} | CSS: ${cssInfo}`
+            );
+            
+            // Also log coordinates
+            console.log(`  └─ Coordinates: (${event.clientX}, ${event.clientY})`);
+        }, true); // Use capture phase to catch all clicks
+    }
+    
+    /**
+     * Track page views using Intersection Observer
+     * Monitors when elements come into viewport
+     */
+    function trackPageViews() {
+        // Observer options
+        const options = {
+            root: null, // viewport
+            rootMargin: '0px',
+            threshold: 0.5 // 50% of element must be visible
+        };
+        
+        // Track viewed elements to avoid duplicate logs
+        const viewedElements = new WeakSet();
+        
+        // Callback when element visibility changes
+        const callback = function(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !viewedElements.has(entry.target)) {
+                    viewedElements.add(entry.target);
+                    
+                    const timestamp = getTimestamp();
+                    const element = entry.target;
+                    const elementInfo = getElementDescription(element);
+                    const cssInfo = getCSSInfo(element);
+                    
+                    // Log the view event
+                    logEvent(
+                        timestamp,
+                        'view',
+                        elementInfo.type,
+                        `${elementInfo.description} | CSS: ${cssInfo}`
+                    );
+                }
+            });
+        };
+        
+        // Create observer
+        const observer = new IntersectionObserver(callback, options);
+        
+        // Observe all significant elements
+        const elementsToObserve = document.querySelectorAll(
+            'img, video, button, a, input, select, textarea, canvas, ' +
+            'h1, h2, h3, h4, h5, h6, section, article, div[class], div[id]'
+        );
+        
+        elementsToObserve.forEach(element => {
+            observer.observe(element);
+        });
+        
+        // Observe new elements added dynamically
+        const mutationObserver = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                mutation.addedNodes.forEach(function(node) {
+                    if (node.nodeType === 1) { // Element node
+                        observer.observe(node);
+                        // Also observe children
+                        const children = node.querySelectorAll(
+                            'img, video, button, a, input, select, textarea, canvas, ' +
+                            'h1, h2, h3, h4, h5, h6, section, article, div[class], div[id]'
+                        );
+                        children.forEach(child => observer.observe(child));
+                    }
+                });
+            });
+        });
+        
+        mutationObserver.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    }
+    
+    /**
+     * Track scroll events for overall page view tracking
+     */
+    function trackScrollEvents() {
+        let scrollTimeout;
+        window.addEventListener('scroll', function() {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(function() {
+                const timestamp = getTimestamp();
+                const scrollY = window.scrollY;
+                const scrollX = window.scrollX;
+                console.log(`${timestamp}, scroll, page, Position: (${scrollX}, ${scrollY})`);
+            }, 150); // Debounce scroll events
+        });
+    }
+    
+    /**
+     * Track page load event
+     */
+    function trackPageLoad() {
+        const timestamp = getTimestamp();
+        const url = window.location.href;
+        const title = document.title;
+        console.log(`${timestamp}, page_load, page, URL: ${url} | Title: ${title}`);
+    }
+    
+    /**
+     * Initialize the tracker
+     */
+    function init() {
+        console.log('=== User Activity Tracker Initialized ===');
+        console.log('Format: Timestamp, Event_Type, Event_Object, Details');
+        console.log('=========================================\n');
+        
+        // Track page load
+        trackPageLoad();
+        
+        // Start tracking
+        trackClickEvents();
+        trackPageViews();
+        trackScrollEvents();
+        
+        console.log('Tracking all user interactions...\n');
+    }
+    
+    // Initialize when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+    
+    // Make it available globally if needed
+    window.UserActivityTracker = {
+        version: '1.0.0',
+        description: 'Tracks user clicks and page views'
+    };
+    
+})();
+</script>
 </html>
